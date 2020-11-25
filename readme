@@ -1,0 +1,3 @@
+cube(`Users`, {
+  sql: `SELECT * FROM users`
+});
