@@ -14,13 +14,14 @@ const menuOrder = [
   'Getting Started',
   'Cube.js Introduction',
   'Configuration',
-  'Cube.js CLI',
+  'Caching',
+  'Authentication & Authorization',
   'Cube.js Backend',
-  'Cube.js Frontend',
   'Data Schema',
+  'Cube.js Frontend',
   'Deployment',
-  'Tutorials',
-  'Examples'
+  'Cube.js CLI',
+  'Examples & Tutorials'
 ];
 
 const nameRules = {
