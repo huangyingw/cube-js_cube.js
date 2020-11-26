@@ -4,6 +4,10 @@ cube(`Users`, {
 
 schema
 
+curl http://cube.dev/downloads/ecom-dump-d3-example.sql
+curl http://cube.dev/downloads/ecom-dump.sql
+curl https://cube.dev/downloads/events-dump.zip
+
 ./docs/Cube.js-ClI/Reference.md
 ./demo-app/.env
 
@@ -15,11 +19,14 @@ sudo -u postgres createuser root
 sudo -u postgres dropdb ecom
 sudo -u postgres createdb -O root ecom
 
-wget -nc http://cube.dev/downloads/ecom-dump-d3-example.sql > ecom-dump.sql 
-psql --dbname ecom -f ecom-dump.sql
+wget -nc http://cube.dev/downloads/ecom-dump-d3-example.sql  
+psql --dbname ecom -f ecom-dump-d3-example.sql   
 
 npm install -g cubejs-cli
+rm -fr d3-dashboard/
 cubejs create d3-dashboard -d postgres
 
 cd d3-dashboard
+
 ./d3-dashboard/.env
+npm run dev
