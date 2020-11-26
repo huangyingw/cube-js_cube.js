@@ -30,3 +30,8 @@ cd d3-dashboard
 
 ./d3-dashboard/.env
 npm run dev
+
+Cube.js server is running in production mode. Learn more about production mode.
+if (this.options.devServer) {
+./guides/real-time-dashboard/content/3_frontend_dashboard.md:56:We have passed two configuration options to Cube.js. The first,
+./d3-dashboard/cube.js
