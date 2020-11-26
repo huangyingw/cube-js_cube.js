@@ -22,6 +22,8 @@
     ignore = .gitignore
     ignore = demo-app/*
     ignore = docker-compose.yml
+    ignore = ecom-dump-d3-example.sql
+    ignore = ecom-dump.sql
 [deploy]
 	host = localhost
 	path = ~/myproject/git/API_platform/cube-js/cube.js
