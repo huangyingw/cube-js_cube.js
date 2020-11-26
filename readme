@@ -1,3 +1,25 @@
 cube(`Users`, {
   sql: `SELECT * FROM users`
 });
+
+schema
+
+./docs/Cube.js-ClI/Reference.md
+./demo-app/.env
+
+https://cube.dev/docs/getting-started-cubejs-schema
+
+guides/d3-dashboard/content/2_cubejs_backend.md
+
+sudo -u postgres createuser root
+sudo -u postgres dropdb ecom
+sudo -u postgres createdb -O root ecom
+
+wget -nc http://cube.dev/downloads/ecom-dump-d3-example.sql > ecom-dump.sql 
+psql --dbname ecom -f ecom-dump.sql
+
+npm install -g cubejs-cli
+cubejs create d3-dashboard -d postgres
+
+cd d3-dashboard
+./d3-dashboard/.env
