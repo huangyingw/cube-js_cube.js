@@ -15,6 +15,9 @@ https://cube.dev/docs/getting-started-cubejs-schema
 
 guides/d3-dashboard/content/2_cubejs_backend.md
 
+sudo -u postgres psql
+ALTER USER root PASSWORD 'myPassword';
+
 sudo -u postgres createuser root
 sudo -u postgres dropdb ecom
 sudo -u postgres createdb -O root ecom
@@ -28,10 +31,13 @@ cubejs create d3-dashboard -d postgres
 
 cd d3-dashboard
 
-./d3-dashboard/.env
 npm run dev
 
 Cube.js server is running in production mode. Learn more about production mode.
 if (this.options.devServer) {
 ./guides/real-time-dashboard/content/3_frontend_dashboard.md:56:We have passed two configuration options to Cube.js. The first,
+
+./d3-dashboard/.env
 ./d3-dashboard/cube.js
+FATAL:  password authentication failed for user "root"
+docs/Configuration/Environment-Variables-Reference.md <unknown> 66 |`CUBEJS_DB_PASS`                               |General             |The password used to connect to the database                                                    |A valid database password                                                                                                      |
